@@ -22,7 +22,7 @@ A Flask-based backend service that scores leads based on product/offer details a
 ```bash
 git clone https://github.com/CoderNikkcoder/lead-scorer.git
 cd lead-scorer
-
+```
 
 2. **Install dependencies**
 ```bash
