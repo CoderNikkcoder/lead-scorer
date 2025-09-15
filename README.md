@@ -1,31 +1,27 @@
-```markdown
 # Lead Scoring Backend API
 
 A Flask-based backend service that scores leads based on product/offer details and prospect data using rule-based logic and Gemini AI.
 
 ## 🚀 Live Deployment
-
 **API Base URL:** `https://lead-scorer.onrender.com`
 
 ## 📋 Features
-
-- ✅ Accept product/offer details via JSON API
+- ✅ Accept product/offer details via JSON API  
 - ✅ Upload leads via CSV file  
-- ✅ Score leads using rule-based logic + Gemini AI
-- ✅ Get results as JSON or export as CSV
-- ✅ RESTful API design with proper error handling
-- ✅ Health check endpoint
-- ✅ CORS enabled for frontend integration
+- ✅ Score leads using rule-based logic + Gemini AI  
+- ✅ Get results as JSON or export as CSV  
+- ✅ RESTful API design with proper error handling  
+- ✅ Health check endpoint  
+- ✅ CORS enabled for frontend integration  
 
 ## 🛠️ Setup Instructions
 
 ### Local Development
-
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/CoderNikkcoder/lead-scorer.git
-   cd lead-scorer
-   ```
+```bash
+git clone https://github.com/CoderNikkcoder/lead-scorer.git
+cd lead-scorer
+
 
 2. **Install dependencies**
    ```bash
