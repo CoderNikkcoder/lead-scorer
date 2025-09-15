@@ -1,10 +1,3 @@
-**Haan bhai!** Sirf README.md file update karo aur push karo. Baaki code already GitHub par hai.
-
-## 🚀 **SIRF README UPDATE KARNE KE STEPS:**
-
-### **Step 1: README.md file open karo**
-Tumhare current README.md file mein ye content replace karo:
-
 ```markdown
 # Lead Scoring Backend API
 
@@ -27,6 +20,7 @@ A Flask-based backend service that scores leads based on product/offer details a
 ## 🛠️ Setup Instructions
 
 ### Local Development
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/CoderNikkcoder/lead-scorer.git
@@ -58,10 +52,10 @@ Set product/offer details
 curl -X POST https://lead-scorer.onrender.com/offer \
   -H "Content-Type: application/json" \
   -d '{
-  "name": "AI Outreach Automation",
-  "value_props": ["24/7 outreach", "6x more meetings"],
-  "ideal_use_cases": ["B2B SaaS mid-market"]
-}'
+    "name": "AI Outreach Automation",
+    "value_props": ["24/7 outreach", "6x more meetings"],
+    "ideal_use_cases": ["B2B SaaS mid-market"]
+  }'
 ```
 
 ### `POST /leads/upload`
@@ -135,7 +129,3 @@ Required columns in CSV file:
 
 For issues or questions, please check the GitHub repository.
 ```
-
-
-
-
