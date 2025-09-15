@@ -17,6 +17,7 @@ A Flask-based backend service that scores leads based on product/offer details a
 ## 🛠️ Setup Instructions
 
 ### Local Development
+
 1. **Clone the repository**
 ```bash
 git clone https://github.com/CoderNikkcoder/lead-scorer.git
@@ -24,7 +25,7 @@ cd lead-scorer
 
 
 2. **Install dependencies**
-   ```bash
+```bash
    pip install -r requirements.txt
    ```
 
