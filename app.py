@@ -117,6 +117,24 @@ def get_gemini_score(lead, offer_data):
         print(f"Gemini Error: {e}")
         return 10, "Error analyzing lead", "Low"
 
+# ✅ NEW: Root endpoint added
+@app.route('/')
+def home():
+    """Root endpoint with API information"""
+    return jsonify({
+        'message': 'Lead Scorer API is running',
+        'endpoints': {
+            'health_check': '/health',
+            'set_offer': '/offer (POST)',
+            'upload_leads': '/leads/upload (POST)', 
+            'run_scoring': '/score (POST)',
+            'get_results': '/results (GET)',
+            'export_csv': '/results/csv (GET)'
+        },
+        'documentation': 'Check README for usage instructions',
+        'github': 'https://github.com/CoderNikkcoder/lead-scorer'
+    })
+
 @app.route('/offer', methods=['POST'])
 def set_offer():
     """Accept product/offer details"""
@@ -157,7 +175,7 @@ def upload_leads():
             required_columns = ['name', 'role', 'company', 'industry', 'location', 'linkedin_bio']
             if not all(col in df.columns for col in required_columns):
                 return jsonify({
-                    'error': f'CSV must contain: {", ".join(required_columns)}'
+                    'error': f'CSV must contain: {', '.join(required_columns)}'
                 }), 400
             
             leads = df.to_dict('records')
